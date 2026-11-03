@@ -1,0 +1,1461 @@
+{
+  "BANK": {
+    "version": 1,
+    "title": "Operation Verb Heist",
+    "settings": {
+      "modelAfterErrors": 2,
+      "pointsPerChallenge": 10,
+      "errorPenalty": 3,
+      "minimumPoints": 2
+    },
+    "code": [
+      "3",
+      "1",
+      "6",
+      "2",
+      "4",
+      "5"
+    ],
+    "referenceChecks": [
+      {
+        "id": "ref-finir",
+        "verb": "finir",
+        "p": 3,
+        "s": "Nous {v} la mission.",
+        "answer": "finissons",
+        "hint": "Finir is a regular -ir verb. With nous, remove -ir and add -issons."
+      },
+      {
+        "id": "ref-parler",
+        "verb": "parler",
+        "p": 1,
+        "s": "Tu {v} au guide.",
+        "answer": "parles",
+        "hint": "Parler is a regular -er verb. With tu, remove -er and add -es."
+      },
+      {
+        "id": "ref-choisir",
+        "verb": "choisir",
+        "p": 4,
+        "s": "Vous {v} un passage.",
+        "answer": "choisissez",
+        "hint": "Choisir is a regular -ir verb. With vous, remove -ir and add -issez."
+      },
+      {
+        "id": "ref-jouer",
+        "verb": "jouer",
+        "p": 3,
+        "s": "Nous {v} ensemble.",
+        "answer": "jouons",
+        "hint": "Jouer is a regular -er verb. With nous, remove -er and add -ons."
+      },
+      {
+        "id": "ref-regarder",
+        "verb": "regarder",
+        "p": 2,
+        "s": "Elle {v} le plan.",
+        "answer": "regarde",
+        "hint": "Regarder is a regular -er verb. With elle, remove -er and add -e."
+      },
+      {
+        "id": "ref-finir-tu",
+        "verb": "finir",
+        "p": 1,
+        "s": "Tu {v} le travail.",
+        "answer": "finis",
+        "hint": "Finir is a regular -ir verb. With tu, remove -ir and add -is."
+      }
+    ],
+    "patternLabs": [
+      {
+        "verb": "lire",
+        "focus": "Observe the signals. Which forms stay the same? What changes in the plural?",
+        "clue": "Elle uses the same form as il. Les gardiens uses the same form as ils.",
+        "tasks": [
+          {
+            "id": "lab-lire-1",
+            "mode": "pattern",
+            "verb": "lire",
+            "p": 2,
+            "s": "Elle {v} un message."
+          },
+          {
+            "id": "lab-lire-2",
+            "mode": "pattern",
+            "verb": "lire",
+            "p": 5,
+            "s": "Les gardiens {v} le journal."
+          }
+        ]
+      },
+      {
+        "verb": "écrire",
+        "focus": "Look for the stem in each signal. Does the same stem work for every subject?",
+        "clue": "On uses the same form as il. For nous, compare the observed nous signal.",
+        "tasks": [
+          {
+            "id": "lab-ecrire-1",
+            "mode": "pattern",
+            "verb": "écrire",
+            "p": 2,
+            "s": "On {v} une note."
+          },
+          {
+            "id": "lab-ecrire-2",
+            "mode": "pattern",
+            "verb": "écrire",
+            "p": 3,
+            "s": "Nous {v} un rapport."
+          }
+        ]
+      },
+      {
+        "verb": "dire",
+        "focus": "Compare the endings. Is there a form that breaks the pattern you expected?",
+        "clue": "Recheck the exact vous signal: this verb has a special form. Elles follows ils.",
+        "tasks": [
+          {
+            "id": "lab-dire-1",
+            "mode": "pattern",
+            "verb": "dire",
+            "p": 4,
+            "s": "Vous {v} bonjour."
+          },
+          {
+            "id": "lab-dire-2",
+            "mode": "pattern",
+            "verb": "dire",
+            "p": 5,
+            "s": "Elles {v} la vérité."
+          }
+        ]
+      }
+    ],
+    "subjects": [
+      "je",
+      "tu",
+      "il / elle / on",
+      "nous",
+      "vous",
+      "ils / elles"
+    ],
+    "verbs": {
+      "écrire": {
+        "forms": [
+          "écris",
+          "écris",
+          "écrit",
+          "écrivons",
+          "écrivez",
+          "écrivent"
+        ],
+        "stem": "écri- / écriv-",
+        "rule": "Écrire changes stem: écri- for je, tu, il/elle/on; écriv- for nous, vous, ils/elles. Endings: -s, -s, -t, -ons, -ez, -ent."
+      },
+      "lire": {
+        "forms": [
+          "lis",
+          "lis",
+          "lit",
+          "lisons",
+          "lisez",
+          "lisent"
+        ],
+        "stem": "li- / lis-",
+        "rule": "Lire has lis, lis, lit in the singular. The plural forms use lis-: lisons, lisez, lisent."
+      },
+      "dire": {
+        "forms": [
+          "dis",
+          "dis",
+          "dit",
+          "disons",
+          "dites",
+          "disent"
+        ],
+        "stem": "di- / dis-",
+        "rule": "Dire has dis, dis, dit, disons, dites, disent. Remember the special vous form: vous dites (never « disez »)."
+      },
+      "ouvrir": {
+        "forms": [
+          "ouvre",
+          "ouvres",
+          "ouvre",
+          "ouvrons",
+          "ouvrez",
+          "ouvrent"
+        ],
+        "stem": "ouvr-",
+        "rule": "Ouvrir is an -ir verb with regular -er present endings: -e, -es, -e, -ons, -ez, -ent. Keep the stem ouvr-."
+      },
+      "offrir": {
+        "forms": [
+          "offre",
+          "offres",
+          "offre",
+          "offrons",
+          "offrez",
+          "offrent"
+        ],
+        "stem": "offr-",
+        "rule": "Offrir is an -ir verb with regular -er present endings: -e, -es, -e, -ons, -ez, -ent. Keep the stem offr-."
+      },
+      "découvrir": {
+        "forms": [
+          "découvre",
+          "découvres",
+          "découvre",
+          "découvrons",
+          "découvrez",
+          "découvrent"
+        ],
+        "stem": "découvr-",
+        "rule": "Découvrir follows ouvrir: stem découvr- + -e, -es, -e, -ons, -ez, -ent. Keep the accent é."
+      }
+    },
+    "rooms": [
+      {
+        "id": "writers",
+        "name": "Writers’ gallery",
+        "verb": "écrire",
+        "icon": "✒",
+        "object": "Tampered guestbook",
+        "clue": "The saboteur writes: “The Prism is not a jewel.”",
+        "sentences": [
+          "J’{v} un message secret.",
+          "Tu {v} le code.",
+          "Elle {v} une lettre.",
+          "Nous {v} dans le registre.",
+          "Vous {v} les indices.",
+          "Ils {v} un rapport."
+        ],
+        "given": [
+          "écris",
+          "écrit",
+          "écris",
+          "écrivons",
+          "écrivez",
+          "écrivent"
+        ]
+      },
+      {
+        "id": "library",
+        "name": "Midnight library",
+        "verb": "lire",
+        "icon": "▤",
+        "object": "Restricted reading log",
+        "clue": "A margin note reads: “Its light preserves lost voices.”",
+        "sentences": [
+          "Je {v} le journal.",
+          "Tu {v} le plan.",
+          "Il {v} le dossier.",
+          "Nous {v} les archives.",
+          "Vous {v} une note.",
+          "Elles {v} les instructions."
+        ],
+        "given": [
+          "lis",
+          "lit",
+          "lit",
+          "lirons",
+          "lisez",
+          "lisent"
+        ]
+      },
+      {
+        "id": "radio",
+        "name": "Radio room",
+        "verb": "dire",
+        "icon": "⌁",
+        "object": "Intercepted transmissions",
+        "clue": "A voice whispers: “Someone inside is trying to silence it.”",
+        "sentences": [
+          "Je {v} le mot secret.",
+          "Tu {v} la vérité.",
+          "On {v} le code.",
+          "Nous {v} bonjour.",
+          "Vous {v} le mot de passe.",
+          "Ils {v} merci."
+        ],
+        "given": [
+          "dit",
+          "dis",
+          "dit",
+          "disons",
+          "disez",
+          "disent"
+        ]
+      },
+      {
+        "id": "doors",
+        "name": "Hall of doors",
+        "verb": "ouvrir",
+        "icon": "▥",
+        "object": "Door access ledger",
+        "clue": "A brass key is labelled: “Three -ir verbs wear -er disguises.”",
+        "sentences": [
+          "J’{v} la porte.",
+          "Tu {v} le coffre.",
+          "Elle {v} une fenêtre.",
+          "Nous {v} le passage.",
+          "Vous {v} la grille.",
+          "Ils {v} les boîtes."
+        ],
+        "given": [
+          "ouvre",
+          "ouvris",
+          "ouvre",
+          "ouvrissons",
+          "ouvrez",
+          "ouvrent"
+        ]
+      },
+      {
+        "id": "gifts",
+        "name": "Gift collection",
+        "verb": "offrir",
+        "icon": "◇",
+        "object": "Suspicious donation slips",
+        "clue": "An unsigned gift bears the mark of the museum’s chief curator.",
+        "sentences": [
+          "J’{v} une clé.",
+          "Tu {v} un livre.",
+          "Il {v} une carte.",
+          "Nous {v} un cadeau.",
+          "Vous {v} une fleur.",
+          "Elles {v} des billets."
+        ],
+        "given": [
+          "offre",
+          "offres",
+          "offrit",
+          "offrons",
+          "offrisez",
+          "offrent"
+        ]
+      },
+      {
+        "id": "observatory",
+        "name": "Observatory",
+        "verb": "découvrir",
+        "icon": "✧",
+        "object": "Altered discovery catalogue",
+        "clue": "The curator’s initials, A.M., hide beneath a false star chart.",
+        "sentences": [
+          "Je {v} un indice.",
+          "Tu {v} une étoile.",
+          "Elle {v} un tunnel.",
+          "Nous {v} le secret.",
+          "Vous {v} un symbole.",
+          "Ils {v} une salle."
+        ],
+        "given": [
+          "découvre",
+          "découvres",
+          "découvrit",
+          "découvrons",
+          "découvrissez",
+          "découvrent"
+        ]
+      }
+    ],
+    "checkpoints": [
+      {
+        "id": "lasers",
+        "name": "Laser corridor",
+        "icon": "╳",
+        "item": "Laser bypass",
+        "object": "Laser control terminal",
+        "verb": "écrire",
+        "story": "A grid of red beams blocks the corridor. Write commands into the maintenance log to turn off four laser circuits.",
+        "success": "The beams blink out. A maintenance badge slides from the terminal: CURATOR A. MOREAU.",
+        "tasks": [
+          {
+            "id": "l1",
+            "mode": "type",
+            "verb": "écrire",
+            "p": 3,
+            "s": "Nous {v} le code de sécurité."
+          },
+          {
+            "id": "l2",
+            "mode": "type",
+            "verb": "écrire",
+            "p": 2,
+            "s": "Elle {v} un message au gardien."
+          },
+          {
+            "id": "l3",
+            "mode": "type",
+            "verb": "écrire",
+            "p": 5,
+            "s": "Ils {v} les commandes."
+          },
+          {
+            "id": "l4",
+            "mode": "type",
+            "verb": "écrire",
+            "p": 4,
+            "s": "Vous {v} dans le registre."
+          }
+        ]
+      },
+      {
+        "id": "archive",
+        "name": "Cipher archive",
+        "icon": "▤",
+        "item": "Decoded dossier",
+        "object": "Encrypted document reader",
+        "verb": "lire",
+        "story": "The documents are locked behind a number cipher. Decode the verb, then insert it into the sentence to reveal who ordered the sabotage.",
+        "success": "The decoded order reads: “Transfer the Prism before dawn — A. Moreau.” The curator is the impostor.",
+        "tasks": [
+          {
+            "id": "a1",
+            "mode": "decode",
+            "verb": "lire",
+            "p": 3,
+            "s": "Nous {v} le dossier du conservateur."
+          },
+          {
+            "id": "a2",
+            "mode": "decode",
+            "verb": "lire",
+            "p": 2,
+            "s": "Il {v} le message chiffré."
+          },
+          {
+            "id": "a3",
+            "mode": "decode",
+            "verb": "lire",
+            "p": 4,
+            "s": "Vous {v} les documents secrets."
+          },
+          {
+            "id": "a4",
+            "mode": "decode",
+            "verb": "lire",
+            "p": 5,
+            "s": "Elles {v} le rapport de sécurité."
+          }
+        ]
+      },
+      {
+        "id": "robot",
+        "name": "Robot sentry",
+        "icon": "♙",
+        "item": "Sentry ally",
+        "object": "Talk to sentry R-07",
+        "verb": "dire",
+        "story": "R-07 trusts precise language. Choose the missing word in each transmission to convince it that you are here to protect the Prism.",
+        "success": "“Vous dites la vérité,” says R-07. It joins your operation and reveals a service lift.",
+        "tasks": [
+          {
+            "id": "r1",
+            "mode": "choice",
+            "verb": "dire",
+            "p": 4,
+            "s": "Vous {v} la vérité à R-07.",
+            "choices": [
+              "disez",
+              "dites",
+              "disent"
+            ]
+          },
+          {
+            "id": "r2",
+            "mode": "choice",
+            "verb": "dire",
+            "p": 3,
+            "s": "Nous {v} : « Le musée est en danger. »",
+            "choices": [
+              "disons",
+              "dirons",
+              "dites"
+            ]
+          },
+          {
+            "id": "r3",
+            "mode": "type",
+            "verb": "dire",
+            "p": 2,
+            "s": "Le robot {v} : « Je vous aide. »"
+          },
+          {
+            "id": "r4",
+            "mode": "type",
+            "verb": "dire",
+            "p": 5,
+            "s": "Les agents {v} : « Merci ! »"
+          }
+        ]
+      },
+      {
+        "id": "exchange",
+        "name": "The key exchange",
+        "icon": "⚿",
+        "item": "Vault key",
+        "object": "Service door & exchange hatch",
+        "verb": "ouvrir + offrir",
+        "story": "The service lift leads to a sealed door. Reconnect its subject–verb wires, then trade a helpful object with the keeper to receive a vault key.",
+        "success": "The keeper accepts your gifts. You receive a vault key and a warning: “Moreau sealed the old passage.”",
+        "tasks": [
+          {
+            "id": "e1",
+            "mode": "match",
+            "verb": "ouvrir",
+            "pairs": [
+              {
+                "p": 0,
+                "s": "J’{v} la porte."
+              },
+              {
+                "p": 3,
+                "s": "Nous {v} la trappe."
+              },
+              {
+                "p": 4,
+                "s": "Vous {v} la grille."
+              }
+            ]
+          },
+          {
+            "id": "e2",
+            "mode": "choice",
+            "verb": "offrir",
+            "p": 0,
+            "s": "J’{v} une lampe au gardien.",
+            "choices": [
+              "offris",
+              "offre",
+              "offres"
+            ]
+          },
+          {
+            "id": "e3",
+            "mode": "type",
+            "verb": "offrir",
+            "p": 3,
+            "s": "Nous {v} une carte au gardien."
+          },
+          {
+            "id": "e4",
+            "mode": "type",
+            "verb": "offrir",
+            "p": 5,
+            "s": "Les agents {v} des provisions."
+          }
+        ]
+      },
+      {
+        "id": "passage",
+        "name": "Hidden passage",
+        "icon": "◈",
+        "item": "Secret route",
+        "object": "Inspect the false star chart",
+        "verb": "découvrir",
+        "story": "The observatory’s star chart is a false wall. Restore four discovery inscriptions to reveal the passage beneath it.",
+        "success": "The wall turns. A tunnel leads straight to the vault. The Prism is still here — but six locks stand between you and the artefact.",
+        "tasks": [
+          {
+            "id": "p1",
+            "mode": "type",
+            "verb": "découvrir",
+            "p": 0,
+            "s": "Je {v} un symbole sur le mur."
+          },
+          {
+            "id": "p2",
+            "mode": "type",
+            "verb": "découvrir",
+            "p": 1,
+            "s": "Tu {v} un levier caché."
+          },
+          {
+            "id": "p3",
+            "mode": "type",
+            "verb": "découvrir",
+            "p": 3,
+            "s": "Nous {v} le passage secret."
+          },
+          {
+            "id": "p4",
+            "mode": "type",
+            "verb": "découvrir",
+            "p": 4,
+            "s": "Vous {v} le chemin du coffre."
+          }
+        ]
+      }
+    ],
+    "vault": [
+      {
+        "id": "v1",
+        "mode": "type",
+        "verb": "écrire",
+        "p": 0,
+        "s": "J’{v} le dernier code."
+      },
+      {
+        "id": "v2",
+        "mode": "type",
+        "verb": "lire",
+        "p": 1,
+        "s": "Tu {v} la dernière instruction."
+      },
+      {
+        "id": "v3",
+        "mode": "type",
+        "verb": "dire",
+        "p": 4,
+        "s": "Vous {v} le mot de passe final."
+      },
+      {
+        "id": "v4",
+        "mode": "type",
+        "verb": "ouvrir",
+        "p": 5,
+        "s": "Les agents {v} le coffre."
+      },
+      {
+        "id": "v5",
+        "mode": "type",
+        "verb": "offrir",
+        "p": 4,
+        "s": "Vous {v} une nouvelle chance au musée."
+      },
+      {
+        "id": "v6",
+        "mode": "type",
+        "verb": "découvrir",
+        "p": 5,
+        "s": "Ils {v} le Prisme des Voix."
+      }
+    ],
+    "assessment": [
+      {
+        "id": "f1",
+        "verb": "écrire",
+        "p": 1,
+        "s": "Tu {v} une histoire."
+      },
+      {
+        "id": "f2",
+        "verb": "écrire",
+        "p": 5,
+        "s": "Elles {v} des poèmes."
+      },
+      {
+        "id": "f3",
+        "verb": "lire",
+        "p": 0,
+        "s": "Je {v} une lettre."
+      },
+      {
+        "id": "f4",
+        "verb": "lire",
+        "p": 3,
+        "s": "Nous {v} un roman."
+      },
+      {
+        "id": "f5",
+        "verb": "dire",
+        "p": 4,
+        "s": "Vous {v} bonjour au guide."
+      },
+      {
+        "id": "f6",
+        "verb": "dire",
+        "p": 2,
+        "s": "Elle {v} la vérité."
+      },
+      {
+        "id": "f7",
+        "verb": "ouvrir",
+        "p": 1,
+        "s": "Tu {v} la fenêtre."
+      },
+      {
+        "id": "f8",
+        "verb": "ouvrir",
+        "p": 3,
+        "s": "Nous {v} les portes."
+      },
+      {
+        "id": "f9",
+        "verb": "offrir",
+        "p": 2,
+        "s": "On {v} un cadeau."
+      },
+      {
+        "id": "f10",
+        "verb": "offrir",
+        "p": 4,
+        "s": "Vous {v} des fleurs."
+      },
+      {
+        "id": "f11",
+        "verb": "découvrir",
+        "p": 2,
+        "s": "Elle {v} un jardin."
+      },
+      {
+        "id": "f12",
+        "verb": "découvrir",
+        "p": 5,
+        "s": "Les élèves {v} un nouveau musée."
+      }
+    ]
+  },
+  "resolvedKey": [
+    {
+      "id": "lab-lire-1",
+      "mode": "pattern",
+      "verb": "lire",
+      "p": 2,
+      "s": "Elle {v} un message.",
+      "correctAnswer": "lit"
+    },
+    {
+      "id": "lab-lire-2",
+      "mode": "pattern",
+      "verb": "lire",
+      "p": 5,
+      "s": "Les gardiens {v} le journal.",
+      "correctAnswer": "lisent"
+    },
+    {
+      "id": "lab-ecrire-1",
+      "mode": "pattern",
+      "verb": "écrire",
+      "p": 2,
+      "s": "On {v} une note.",
+      "correctAnswer": "écrit"
+    },
+    {
+      "id": "lab-ecrire-2",
+      "mode": "pattern",
+      "verb": "écrire",
+      "p": 3,
+      "s": "Nous {v} un rapport.",
+      "correctAnswer": "écrivons"
+    },
+    {
+      "id": "lab-dire-1",
+      "mode": "pattern",
+      "verb": "dire",
+      "p": 4,
+      "s": "Vous {v} bonjour.",
+      "correctAnswer": "dites"
+    },
+    {
+      "id": "lab-dire-2",
+      "mode": "pattern",
+      "verb": "dire",
+      "p": 5,
+      "s": "Elles {v} la vérité.",
+      "correctAnswer": "disent"
+    },
+    {
+      "id": "m1-writers-0",
+      "mode": "record",
+      "verb": "écrire",
+      "p": 0,
+      "s": "J’{v} un message secret.",
+      "given": "écris",
+      "correctAnswer": "écris"
+    },
+    {
+      "id": "m1-writers-1",
+      "mode": "record",
+      "verb": "écrire",
+      "p": 1,
+      "s": "Tu {v} le code.",
+      "given": "écrit",
+      "correctAnswer": "écris"
+    },
+    {
+      "id": "m1-writers-2",
+      "mode": "record",
+      "verb": "écrire",
+      "p": 2,
+      "s": "Elle {v} une lettre.",
+      "given": "écris",
+      "correctAnswer": "écrit"
+    },
+    {
+      "id": "m1-writers-3",
+      "mode": "record",
+      "verb": "écrire",
+      "p": 3,
+      "s": "Nous {v} dans le registre.",
+      "given": "écrivons",
+      "correctAnswer": "écrivons"
+    },
+    {
+      "id": "m1-writers-4",
+      "mode": "record",
+      "verb": "écrire",
+      "p": 4,
+      "s": "Vous {v} les indices.",
+      "given": "écrivez",
+      "correctAnswer": "écrivez"
+    },
+    {
+      "id": "m1-writers-5",
+      "mode": "record",
+      "verb": "écrire",
+      "p": 5,
+      "s": "Ils {v} un rapport.",
+      "given": "écrivent",
+      "correctAnswer": "écrivent"
+    },
+    {
+      "id": "m1-library-0",
+      "mode": "record",
+      "verb": "lire",
+      "p": 0,
+      "s": "Je {v} le journal.",
+      "given": "lis",
+      "correctAnswer": "lis"
+    },
+    {
+      "id": "m1-library-1",
+      "mode": "record",
+      "verb": "lire",
+      "p": 1,
+      "s": "Tu {v} le plan.",
+      "given": "lit",
+      "correctAnswer": "lis"
+    },
+    {
+      "id": "m1-library-2",
+      "mode": "record",
+      "verb": "lire",
+      "p": 2,
+      "s": "Il {v} le dossier.",
+      "given": "lit",
+      "correctAnswer": "lit"
+    },
+    {
+      "id": "m1-library-3",
+      "mode": "record",
+      "verb": "lire",
+      "p": 3,
+      "s": "Nous {v} les archives.",
+      "given": "lirons",
+      "correctAnswer": "lisons"
+    },
+    {
+      "id": "m1-library-4",
+      "mode": "record",
+      "verb": "lire",
+      "p": 4,
+      "s": "Vous {v} une note.",
+      "given": "lisez",
+      "correctAnswer": "lisez"
+    },
+    {
+      "id": "m1-library-5",
+      "mode": "record",
+      "verb": "lire",
+      "p": 5,
+      "s": "Elles {v} les instructions.",
+      "given": "lisent",
+      "correctAnswer": "lisent"
+    },
+    {
+      "id": "m1-radio-0",
+      "mode": "record",
+      "verb": "dire",
+      "p": 0,
+      "s": "Je {v} le mot secret.",
+      "given": "dit",
+      "correctAnswer": "dis"
+    },
+    {
+      "id": "m1-radio-1",
+      "mode": "record",
+      "verb": "dire",
+      "p": 1,
+      "s": "Tu {v} la vérité.",
+      "given": "dis",
+      "correctAnswer": "dis"
+    },
+    {
+      "id": "m1-radio-2",
+      "mode": "record",
+      "verb": "dire",
+      "p": 2,
+      "s": "On {v} le code.",
+      "given": "dit",
+      "correctAnswer": "dit"
+    },
+    {
+      "id": "m1-radio-3",
+      "mode": "record",
+      "verb": "dire",
+      "p": 3,
+      "s": "Nous {v} bonjour.",
+      "given": "disons",
+      "correctAnswer": "disons"
+    },
+    {
+      "id": "m1-radio-4",
+      "mode": "record",
+      "verb": "dire",
+      "p": 4,
+      "s": "Vous {v} le mot de passe.",
+      "given": "disez",
+      "correctAnswer": "dites"
+    },
+    {
+      "id": "m1-radio-5",
+      "mode": "record",
+      "verb": "dire",
+      "p": 5,
+      "s": "Ils {v} merci.",
+      "given": "disent",
+      "correctAnswer": "disent"
+    },
+    {
+      "id": "m1-doors-0",
+      "mode": "record",
+      "verb": "ouvrir",
+      "p": 0,
+      "s": "J’{v} la porte.",
+      "given": "ouvre",
+      "correctAnswer": "ouvre"
+    },
+    {
+      "id": "m1-doors-1",
+      "mode": "record",
+      "verb": "ouvrir",
+      "p": 1,
+      "s": "Tu {v} le coffre.",
+      "given": "ouvris",
+      "correctAnswer": "ouvres"
+    },
+    {
+      "id": "m1-doors-2",
+      "mode": "record",
+      "verb": "ouvrir",
+      "p": 2,
+      "s": "Elle {v} une fenêtre.",
+      "given": "ouvre",
+      "correctAnswer": "ouvre"
+    },
+    {
+      "id": "m1-doors-3",
+      "mode": "record",
+      "verb": "ouvrir",
+      "p": 3,
+      "s": "Nous {v} le passage.",
+      "given": "ouvrissons",
+      "correctAnswer": "ouvrons"
+    },
+    {
+      "id": "m1-doors-4",
+      "mode": "record",
+      "verb": "ouvrir",
+      "p": 4,
+      "s": "Vous {v} la grille.",
+      "given": "ouvrez",
+      "correctAnswer": "ouvrez"
+    },
+    {
+      "id": "m1-doors-5",
+      "mode": "record",
+      "verb": "ouvrir",
+      "p": 5,
+      "s": "Ils {v} les boîtes.",
+      "given": "ouvrent",
+      "correctAnswer": "ouvrent"
+    },
+    {
+      "id": "m1-gifts-0",
+      "mode": "record",
+      "verb": "offrir",
+      "p": 0,
+      "s": "J’{v} une clé.",
+      "given": "offre",
+      "correctAnswer": "offre"
+    },
+    {
+      "id": "m1-gifts-1",
+      "mode": "record",
+      "verb": "offrir",
+      "p": 1,
+      "s": "Tu {v} un livre.",
+      "given": "offres",
+      "correctAnswer": "offres"
+    },
+    {
+      "id": "m1-gifts-2",
+      "mode": "record",
+      "verb": "offrir",
+      "p": 2,
+      "s": "Il {v} une carte.",
+      "given": "offrit",
+      "correctAnswer": "offre"
+    },
+    {
+      "id": "m1-gifts-3",
+      "mode": "record",
+      "verb": "offrir",
+      "p": 3,
+      "s": "Nous {v} un cadeau.",
+      "given": "offrons",
+      "correctAnswer": "offrons"
+    },
+    {
+      "id": "m1-gifts-4",
+      "mode": "record",
+      "verb": "offrir",
+      "p": 4,
+      "s": "Vous {v} une fleur.",
+      "given": "offrisez",
+      "correctAnswer": "offrez"
+    },
+    {
+      "id": "m1-gifts-5",
+      "mode": "record",
+      "verb": "offrir",
+      "p": 5,
+      "s": "Elles {v} des billets.",
+      "given": "offrent",
+      "correctAnswer": "offrent"
+    },
+    {
+      "id": "m1-observatory-0",
+      "mode": "record",
+      "verb": "découvrir",
+      "p": 0,
+      "s": "Je {v} un indice.",
+      "given": "découvre",
+      "correctAnswer": "découvre"
+    },
+    {
+      "id": "m1-observatory-1",
+      "mode": "record",
+      "verb": "découvrir",
+      "p": 1,
+      "s": "Tu {v} une étoile.",
+      "given": "découvres",
+      "correctAnswer": "découvres"
+    },
+    {
+      "id": "m1-observatory-2",
+      "mode": "record",
+      "verb": "découvrir",
+      "p": 2,
+      "s": "Elle {v} un tunnel.",
+      "given": "découvrit",
+      "correctAnswer": "découvre"
+    },
+    {
+      "id": "m1-observatory-3",
+      "mode": "record",
+      "verb": "découvrir",
+      "p": 3,
+      "s": "Nous {v} le secret.",
+      "given": "découvrons",
+      "correctAnswer": "découvrons"
+    },
+    {
+      "id": "m1-observatory-4",
+      "mode": "record",
+      "verb": "découvrir",
+      "p": 4,
+      "s": "Vous {v} un symbole.",
+      "given": "découvrissez",
+      "correctAnswer": "découvrez"
+    },
+    {
+      "id": "m1-observatory-5",
+      "mode": "record",
+      "verb": "découvrir",
+      "p": 5,
+      "s": "Ils {v} une salle.",
+      "given": "découvrent",
+      "correctAnswer": "découvrent"
+    },
+    {
+      "id": "l1",
+      "mode": "type",
+      "verb": "écrire",
+      "p": 3,
+      "s": "Nous {v} le code de sécurité.",
+      "correctAnswer": "écrivons"
+    },
+    {
+      "id": "l2",
+      "mode": "type",
+      "verb": "écrire",
+      "p": 2,
+      "s": "Elle {v} un message au gardien.",
+      "correctAnswer": "écrit"
+    },
+    {
+      "id": "l3",
+      "mode": "type",
+      "verb": "écrire",
+      "p": 5,
+      "s": "Ils {v} les commandes.",
+      "correctAnswer": "écrivent"
+    },
+    {
+      "id": "l4",
+      "mode": "type",
+      "verb": "écrire",
+      "p": 4,
+      "s": "Vous {v} dans le registre.",
+      "correctAnswer": "écrivez"
+    },
+    {
+      "id": "a1",
+      "mode": "decode",
+      "verb": "lire",
+      "p": 3,
+      "s": "Nous {v} le dossier du conservateur.",
+      "correctAnswer": "lisons"
+    },
+    {
+      "id": "a2",
+      "mode": "decode",
+      "verb": "lire",
+      "p": 2,
+      "s": "Il {v} le message chiffré.",
+      "correctAnswer": "lit"
+    },
+    {
+      "id": "a3",
+      "mode": "decode",
+      "verb": "lire",
+      "p": 4,
+      "s": "Vous {v} les documents secrets.",
+      "correctAnswer": "lisez"
+    },
+    {
+      "id": "a4",
+      "mode": "decode",
+      "verb": "lire",
+      "p": 5,
+      "s": "Elles {v} le rapport de sécurité.",
+      "correctAnswer": "lisent"
+    },
+    {
+      "id": "r1",
+      "mode": "choice",
+      "verb": "dire",
+      "p": 4,
+      "s": "Vous {v} la vérité à R-07.",
+      "choices": [
+        "disez",
+        "dites",
+        "disent"
+      ],
+      "correctAnswer": "dites"
+    },
+    {
+      "id": "r2",
+      "mode": "choice",
+      "verb": "dire",
+      "p": 3,
+      "s": "Nous {v} : « Le musée est en danger. »",
+      "choices": [
+        "disons",
+        "dirons",
+        "dites"
+      ],
+      "correctAnswer": "disons"
+    },
+    {
+      "id": "r3",
+      "mode": "type",
+      "verb": "dire",
+      "p": 2,
+      "s": "Le robot {v} : « Je vous aide. »",
+      "correctAnswer": "dit"
+    },
+    {
+      "id": "r4",
+      "mode": "type",
+      "verb": "dire",
+      "p": 5,
+      "s": "Les agents {v} : « Merci ! »",
+      "correctAnswer": "disent"
+    },
+    {
+      "id": "e1-0",
+      "mode": "match",
+      "verb": "ouvrir",
+      "pairs": [
+        {
+          "p": 0,
+          "s": "J’{v} la porte."
+        },
+        {
+          "p": 3,
+          "s": "Nous {v} la trappe."
+        },
+        {
+          "p": 4,
+          "s": "Vous {v} la grille."
+        }
+      ],
+      "p": 0,
+      "s": "J’{v} la porte.",
+      "correctAnswer": "ouvre"
+    },
+    {
+      "id": "e1-1",
+      "mode": "match",
+      "verb": "ouvrir",
+      "pairs": [
+        {
+          "p": 0,
+          "s": "J’{v} la porte."
+        },
+        {
+          "p": 3,
+          "s": "Nous {v} la trappe."
+        },
+        {
+          "p": 4,
+          "s": "Vous {v} la grille."
+        }
+      ],
+      "p": 3,
+      "s": "Nous {v} la trappe.",
+      "correctAnswer": "ouvrons"
+    },
+    {
+      "id": "e1-2",
+      "mode": "match",
+      "verb": "ouvrir",
+      "pairs": [
+        {
+          "p": 0,
+          "s": "J’{v} la porte."
+        },
+        {
+          "p": 3,
+          "s": "Nous {v} la trappe."
+        },
+        {
+          "p": 4,
+          "s": "Vous {v} la grille."
+        }
+      ],
+      "p": 4,
+      "s": "Vous {v} la grille.",
+      "correctAnswer": "ouvrez"
+    },
+    {
+      "id": "e2",
+      "mode": "choice",
+      "verb": "offrir",
+      "p": 0,
+      "s": "J’{v} une lampe au gardien.",
+      "choices": [
+        "offris",
+        "offre",
+        "offres"
+      ],
+      "correctAnswer": "offre"
+    },
+    {
+      "id": "e3",
+      "mode": "type",
+      "verb": "offrir",
+      "p": 3,
+      "s": "Nous {v} une carte au gardien.",
+      "correctAnswer": "offrons"
+    },
+    {
+      "id": "e4",
+      "mode": "type",
+      "verb": "offrir",
+      "p": 5,
+      "s": "Les agents {v} des provisions.",
+      "correctAnswer": "offrent"
+    },
+    {
+      "id": "p1",
+      "mode": "type",
+      "verb": "découvrir",
+      "p": 0,
+      "s": "Je {v} un symbole sur le mur.",
+      "correctAnswer": "découvre"
+    },
+    {
+      "id": "p2",
+      "mode": "type",
+      "verb": "découvrir",
+      "p": 1,
+      "s": "Tu {v} un levier caché.",
+      "correctAnswer": "découvres"
+    },
+    {
+      "id": "p3",
+      "mode": "type",
+      "verb": "découvrir",
+      "p": 3,
+      "s": "Nous {v} le passage secret.",
+      "correctAnswer": "découvrons"
+    },
+    {
+      "id": "p4",
+      "mode": "type",
+      "verb": "découvrir",
+      "p": 4,
+      "s": "Vous {v} le chemin du coffre.",
+      "correctAnswer": "découvrez"
+    },
+    {
+      "id": "v1",
+      "mode": "type",
+      "verb": "écrire",
+      "p": 0,
+      "s": "J’{v} le dernier code.",
+      "correctAnswer": "écris"
+    },
+    {
+      "id": "v2",
+      "mode": "type",
+      "verb": "lire",
+      "p": 1,
+      "s": "Tu {v} la dernière instruction.",
+      "correctAnswer": "lis"
+    },
+    {
+      "id": "v3",
+      "mode": "type",
+      "verb": "dire",
+      "p": 4,
+      "s": "Vous {v} le mot de passe final.",
+      "correctAnswer": "dites"
+    },
+    {
+      "id": "v4",
+      "mode": "type",
+      "verb": "ouvrir",
+      "p": 5,
+      "s": "Les agents {v} le coffre.",
+      "correctAnswer": "ouvrent"
+    },
+    {
+      "id": "v5",
+      "mode": "type",
+      "verb": "offrir",
+      "p": 4,
+      "s": "Vous {v} une nouvelle chance au musée.",
+      "correctAnswer": "offrez"
+    },
+    {
+      "id": "v6",
+      "mode": "type",
+      "verb": "découvrir",
+      "p": 5,
+      "s": "Ils {v} le Prisme des Voix.",
+      "correctAnswer": "découvrent"
+    },
+    {
+      "id": "f1",
+      "verb": "écrire",
+      "p": 1,
+      "s": "Tu {v} une histoire.",
+      "mode": "assessment",
+      "correctAnswer": "écris"
+    },
+    {
+      "id": "f2",
+      "verb": "écrire",
+      "p": 5,
+      "s": "Elles {v} des poèmes.",
+      "mode": "assessment",
+      "correctAnswer": "écrivent"
+    },
+    {
+      "id": "f3",
+      "verb": "lire",
+      "p": 0,
+      "s": "Je {v} une lettre.",
+      "mode": "assessment",
+      "correctAnswer": "lis"
+    },
+    {
+      "id": "f4",
+      "verb": "lire",
+      "p": 3,
+      "s": "Nous {v} un roman.",
+      "mode": "assessment",
+      "correctAnswer": "lisons"
+    },
+    {
+      "id": "f5",
+      "verb": "dire",
+      "p": 4,
+      "s": "Vous {v} bonjour au guide.",
+      "mode": "assessment",
+      "correctAnswer": "dites"
+    },
+    {
+      "id": "f6",
+      "verb": "dire",
+      "p": 2,
+      "s": "Elle {v} la vérité.",
+      "mode": "assessment",
+      "correctAnswer": "dit"
+    },
+    {
+      "id": "f7",
+      "verb": "ouvrir",
+      "p": 1,
+      "s": "Tu {v} la fenêtre.",
+      "mode": "assessment",
+      "correctAnswer": "ouvres"
+    },
+    {
+      "id": "f8",
+      "verb": "ouvrir",
+      "p": 3,
+      "s": "Nous {v} les portes.",
+      "mode": "assessment",
+      "correctAnswer": "ouvrons"
+    },
+    {
+      "id": "f9",
+      "verb": "offrir",
+      "p": 2,
+      "s": "On {v} un cadeau.",
+      "mode": "assessment",
+      "correctAnswer": "offre"
+    },
+    {
+      "id": "f10",
+      "verb": "offrir",
+      "p": 4,
+      "s": "Vous {v} des fleurs.",
+      "mode": "assessment",
+      "correctAnswer": "offrez"
+    },
+    {
+      "id": "f11",
+      "verb": "découvrir",
+      "p": 2,
+      "s": "Elle {v} un jardin.",
+      "mode": "assessment",
+      "correctAnswer": "découvre"
+    },
+    {
+      "id": "f12",
+      "verb": "découvrir",
+      "p": 5,
+      "s": "Les élèves {v} un nouveau musée.",
+      "mode": "assessment",
+      "correctAnswer": "découvrent"
+    }
+  ]
+}
